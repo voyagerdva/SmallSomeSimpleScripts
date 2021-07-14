@@ -88,28 +88,3 @@ def fixture16():
     Sin = "qwqwqwqwqwqwqwq"
     Sout = "qwqwqwqwqwqwqwq"
     return Sin, Sout
-
-def fixture17():
-    Sin = "qweqewq"
-    Sout = "qweqewq"
-    return Sin, Sout
-
-def fixture18():
-    Sin = "qwerqewq"
-    Sout = "qwerqewq"
-    return Sin, Sout
-
-def fixture19():
-    Sin = "qwerrewq"
-    Sout = ""
-    return Sin, Sout
-
-def fixture20():
-    Sin = "qweqqewqwwq"
-    Sout = "q"
-    return Sin, Sout
-
-def fixture21():
-    Sin = "qweqqewqr"
-    Sout = "r"
-    return Sin, Sout

@@ -5,17 +5,26 @@
 #
 #######################################################################
 
-P = ["", "q", "qw", "qq", "qqq", "qqqq", "qqw", "qqww", "qqwqqw", "qqwwee", "qqweertty", "qwe", "qwwerrtyyu", "19", "11"]
+import A_stack as st
 
 def find(S):
-    i = 0
-    while i < len(S) - 1:
-        if S[i] == S[i + 1]:
-            S1 = S[:i] + S[(i + 2):]
-            S = S1
-            i = -1
-        i += 1
-    print(f"output string = '{S}'")
-    return S
-
-find(P)
+    S1 = ""
+    st.clear()
+    
+    for letter in S:
+        if st.is_empty():
+            st.push(letter)
+            S1 = S1 + letter
+            continue
+        else:
+            if letter == st.pop():
+                S1 = S1[:-1]
+                st.push(S1[-1:])
+                continue
+            else:
+                st.push(letter)
+                S1 = S1 + letter
+    return S1
+      
+S_new = find(S1)
+print(f"Новая строка получилась '{S_new}'")

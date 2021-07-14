@@ -89,5 +89,30 @@ class TestFind(unittest.TestCase):
         result = oper.find(Sin)
         self.assertEqual(result, Sout)
 
+    def test_17(self):
+        Sin, Sout = fx.fixture17()
+        result = oper.find(Sin)
+        self.assertEqual(result, Sout)
+
+    def test_18(self):
+        Sin, Sout = fx.fixture18()
+        result = oper.find(Sin)
+        self.assertEqual(result, Sout)
+
+    def test_19(self):
+        Sin, Sout = fx.fixture19()
+        result = oper.find(Sin)
+        self.assertEqual(result, Sout)
+
+    def test_20(self):
+        Sin, Sout = fx.fixture20()
+        result = oper.find(Sin)
+        self.assertEqual(result, Sout)
+
+    def test_21(self):
+        Sin, Sout = fx.fixture21()
+        result = oper.find(Sin)
+        self.assertEqual(result, Sout)
+
 if __name__ == '__main__':
     unittest.main()
