@@ -7,7 +7,7 @@
 
 import A_stack as st
 
-def find(S):
+def removePairLetters(S):
     S1 = ""
     st.clear()
     
@@ -25,6 +25,3 @@ def find(S):
                 st.push(letter)
                 S1 = S1 + letter
     return S1
-      
-S_new = find(S1)
-print(f"Новая строка получилась '{S_new}'")
