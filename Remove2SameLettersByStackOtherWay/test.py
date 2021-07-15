@@ -1,6 +1,6 @@
 import unittest
 import fixture as fx
-import operate as operate
+import operate_stackFull as operate
 
 class TestRemovePairLetters(unittest.TestCase):
 
