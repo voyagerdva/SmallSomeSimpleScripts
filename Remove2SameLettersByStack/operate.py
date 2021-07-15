@@ -15,12 +15,10 @@ def removePairLetters(S):
         if st.is_empty():
             st.push(letter)
             S1 = S1 + letter
-            continue
         else:
             if letter == st.pop():
                 S1 = S1[:-1]
                 st.push(S1[-1:])
-                continue
             else:
                 st.push(letter)
                 S1 = S1 + letter

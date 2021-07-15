@@ -13,11 +13,9 @@ def removePairLetters(S):
     for letter in S:
         if st.is_empty():
             st.push(letter)
-            continue
         else:
             if letter == st.check():
                 st.pop()
-                continue
             else:
                 st.push(letter)
     return st.show()
