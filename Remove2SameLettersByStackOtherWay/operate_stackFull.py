@@ -8,11 +8,9 @@
 import A_stack as st
 
 def removePairLetters(S):
-    S1 = ""
     st.clear()
-    
+
     for letter in S:
-        
         if st.is_empty():
             st.push(letter)
             continue
